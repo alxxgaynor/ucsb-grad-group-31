@@ -24,9 +24,10 @@ ggplot() +
        aes(x = year, 
            y = domestic_enrollment, fill = ethnicity),
        position = "fill") + 
-  labs(title = "Annual UCSB Graduate Enrollment by Ethnicity", 
+  labs(title = "Annual UCSB Graduate Enrollment by Percent Ethnicity", 
        x = "Year", 
-       y = "Ethnicity by Percentage of Class ")
+       y = "Ethnicity by Percentage of Class ") + 
+   theme_minimal()
   
 ```
 
