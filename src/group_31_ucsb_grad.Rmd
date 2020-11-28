@@ -14,6 +14,34 @@ library(here)
 
 
 ```{r}
-ucsb_grad_data <- read_csv( here("data", "ucsb_grad_data.csv"))
+ucsb_grad_data <- read_csv( here("data", 
+                                 "ucsb_grad_data.csv"))
 ```
+
+```{r}
+ggplot() + 
+  geom_col(data = ucsb_grad_data, 
+       aes(x = year, 
+           y = domestic_enrollment, fill = ethnicity))
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
